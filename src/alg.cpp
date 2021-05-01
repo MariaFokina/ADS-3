@@ -1,16 +1,16 @@
 // Copyright 2021 NNTU-CS
 #include <string>
 #include "tstack.h"
-int priority(char n) {
-  if ((n == '*') || (n == '/')) {
+int priority(char x) {
+  if ((x == '*') || (x == '/')) {
     return 3;
   }
   else {
-    if ((n == '+') || (n == '-')) {
+    if ((x == '+') || (x == '-')) {
       return 2;
     }
     else 
-      if (n == ')')
+      if (x == ')')
         return 1;
     else
       return 0;
